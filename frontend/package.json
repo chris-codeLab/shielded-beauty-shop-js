@@ -1,0 +1,42 @@
+{
+  "name": "sb-shop",
+  "version": "1.0.1",
+  "description": "Shielded Shop",
+  "main": "custom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --mode=development --debug --devtool eval-source-map --output-pathinfo --watch",
+    "build": "webpack --mode=production"
+  },
+  "keywords": [],
+  "author": "Chris Mason",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.7.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "aos": "^2.3.4",
+    "axios": "^1.4.0",
+    "Buffer": "^0.0.0",
+    "date-fns": "^2.29.1",
+    "dotenv-webpack": "^2.0.0",
+    "ion-rangeslider": "^2.3.1",
+    "jquery": "^3.6.4",
+    "lazyload": "^2.0.0-rc.2",
+    "slick": "^1.12.2",
+    "sweetalert2": "^11.7.3",
+    "swiper": "^9.2.4",
+    "three": "^0.152.2",
+    "webpack": "^5.81.0"
+  }
+}
