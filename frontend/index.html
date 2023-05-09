@@ -419,25 +419,30 @@
 			<section id="tranding" class="waver" style="margin-bottom: 500px; height: 690px;">
 				<div class="t-container" style=" padding-top: 0px;
 				display: flex; justify-content: center;flex-direction: column;align-items: center;padding-top: 20px;">
-					<h1 class="text-center section-heading" style=" margin-top: -110px; color: #61388b; width: 100%; font-family: 'Poppins'; font-weight: 700; " data-aos="fade-left" data-aos-offset="-990"
+					<h1 class="text-center section-heading" style=" font-size: 52px; margin-top: -110px; color: #1E2230; width: 100%; font-family: 'Poppins'; font-weight: 600; " data-aos="fade-left" data-aos-offset="-990"
 					data-aos-easing="ease-out-cubic"
 					data-aos-duration="2500">
 						Praise for Guardian Complex</h1>
 					<div class="text-center section-subheading" style="font-size: 36px; padding-top: 0px;">
-						<p>Real skin. Real reviews. See the difference. </p>
-						<p>Brighter. Firmer. Smoother. Tighter. </p>
-						<p>Hydrated. Nourished. Confident.</p>
+						<p style="font-family: 'Poppins';
+						font-style: normal;
+						font-weight: 300;
+						font-size: 20px;
+						line-height: 40px;">Real skin. Real reviews. See the difference. <br />
+							Brighter. Firmer. Smoother. Tighter. Hydrated. Nourished. Confident. </p>	
 					</div>
 				</div>
+		
 				<div class="video_slider"  data-aos="fade-right" data-aos-offset="-890"
 				data-aos-easing="ease-out-cubic"
 				data-aos-duration="1500">
+				
 					<input type="radio" name="slider" id="s1" checked>
 					<input type="radio" name="slider" id="s2">
 					<input type="radio" name="slider" id="s3">
 					<input type="radio" name="slider" id="s4">
 					<input type="radio" name="slider" id="s5">
-				  
+			
 					<label for="s1" id="slide1">
 						<video width="350" controls autoplay>
 							<source src="./img/video_2.mp4" type="video/mp4">
@@ -465,8 +470,9 @@
 							This browser doesn't support video tag.
 						</video></label>
 				</div>
-				<button style="margin-top: 180px; color: #fff; box-sizing: border-box; display: flex; flex-direction: row; align-items: center; width: 292px; height: 65px; justify-content: center; padding: 15px 48px 15px 35px; background: #CE0037;
+				<button style="margin-top: 210px; color: #fff; box-sizing: border-box; display: flex; flex-direction: row; align-items: center; width: 292px; height: 65px; justify-content: center; padding: 15px 48px 15px 35px; background: #CE0037;
 						border-radius: 10px; font-family: 'Lato'; font-style: normal; font-weight: 800; font-size: 18px; position: relative; left: 37%;">SHOP NOW</button>
+
 				<!-- <div class="t-container">
 					<div class="swiper tranding-slider"
 						style="transform: scaleY(0.81) scaleX(0.91); margin-top: -120px;">
@@ -606,8 +612,8 @@
 
 					</div>
 				</div> -->
+		
 			</section>
-
 		
 			<!-- BEGIN LOGOS -->
 			<section style="height: 621px; left: 0px; top: 0px; background: #FFF9F8; margin-top: 50px; margin-bottom: 50px;">
@@ -1556,6 +1562,7 @@
 	<script src="js/lazyload.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 	<script src="js/rating.js"></script>
 	<script src="js/custom.js"></script>
 	<script>
@@ -1565,6 +1572,7 @@ $(document).ready(function() {
 		useClassNames: true,
 		offset: -150,
 	});
+
   $('.logo-carousel').slick({
     slidesToShow: 6,
     slidesToScroll: 1,

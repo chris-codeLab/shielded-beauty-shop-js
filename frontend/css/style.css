@@ -4465,29 +4465,31 @@ color: #1E2230;
 	top: -20%;
 }
 
-.video_nav > input[type=radio] {
+input[type=radio] {
 	position: relative;
-	top: 108%;
-	left: 50%;
+	top: 150%;
+	left: -11%;
 	width: 18px;
 	height: 18px;
 	margin: 0 15px 0 0;
+	background: #f30156;
+	border-radius: 50px;
 	opacity: 0.4;
 	transform: translateX(-83px);
 	cursor: pointer;
   }
   
   
-  input[type=radio]:nth-child(5) {
+   input[type=radio]:nth-child(5) {
 	margin-right: 0px;
   }
   
-  input[type=radio]:checked {
+	input[type=radio]:checked {
 	opacity: 1;
   }
   
- .video_slider label,
- .video_slider label video {
+ 
+ .video_slider label {
   position: absolute;
   width: 350px;
   height: 600px;
