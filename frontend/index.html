@@ -22,7 +22,7 @@
 <!-- Slick Slider JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<link rel="preload stylesheet" href="./css/style.css" as="style">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -39,7 +39,7 @@
 			<!-- BEGIN MAIN BLOCK -->
 			<div class="main-block load-bg">
 				<div class="wrapper">
-					<div class="main-block__content">
+					<div class="main-block__content"  data-aos="fade-right">
 						<h1 class="block-left" style="font-size: 72px;">Safeguard </h1>
 						<h1 class="block-right" >your skin</h1>
 						
@@ -90,7 +90,9 @@
 				<div class="trending-content">
 					<div class="trending-top" >
 						<span class=""></span>
-						<h2 style="font-size: 52px; margin-top: -70px; font-family: 'Poppins'; font-weight: 700; text-transform: none;">Invigorating ingredients<br />
+						<h2 style="font-size: 52px; margin-top: -70px; font-family: 'Poppins'; font-weight: 700; text-transform: none;" data-aos="fade-right"
+						data-aos-offset="-500"
+						data-aos-easing="ease-in-sine">Invigorating ingredients<br />
 							Fast-acting formulas</h2>
 						<p>Clean + clinical skincare formulated to repair, restore and rejuvenate your natural glow.
 						</p>
@@ -360,7 +362,7 @@
 			<!-- TRENDING EOF   -->
 			<div style="width: 100%; height: 200px; margin-top: -258px; background: #fff; z-index: 1;"></div>
 			<section style="height: 621px; left: 0px; top: 0px; background: #FFF9F8; margin-top: 0px;">
-				<div class="discoverText">
+				<div class="discoverText" data-aos="fade-right" data-aos-offset="-850" data-aos-duration="2500" data-aos-easing="ease-out-sine">
 					<h1>Rejuvenate + restore + protect</h1>
 					<p>your natural microbiome with our signature Guardian Complex,
 						powered by skincare’s best ingredients. Packed with pure, 
@@ -370,9 +372,11 @@
 						border-radius: 10px; font-family: 'Lato'; font-style: normal; font-weight: 800; font-size: 18px;">DISCOVER NOW</button>
 				</div>
 			</section>
-			<section class="wavyContainer">
-				<div class="masonryImgs" style="display: flex; ">
-					<div  style="background-size: contain; z-index: 1; margin-left: -9px; background-image: url('./img/imgTiles.png'); position: absolute; width: 100%; height: 771.24px; left: 0px; top: 36px;" class="img"></div>
+			<section class="wavyContainer" data-aos="zoom-out" data-aos-offset="-890"
+			data-aos-easing="ease-out-cubic"
+			data-aos-duration="2500">
+				<div class="masonryImgs" style="display: flex;" >
+					<div  style="background-size: contain; z-index: 1; margin-left: -9px; background-image: url('./img/imgTiles.png'); position: absolute; width: 100%; height: 771.24px; left: 50px; top: 36px; background-repeat: no-repeat;" class="img"></div>
 					
 					<svg class="svgwave" xmlns="http://www.w3.org/2000/svg" width="101" height="16" viewBox="0 0 301 21">
 						<path id="wavepath" d="M0,.5c30.0978,0,30.0978,20,60.1956,20S90.2948.5,120.394.5s30.1,20,60.2,20c30.1015,0,30.1015-20,60.203-20s30.1014,20,60.2029,20"></path>
@@ -387,24 +391,87 @@
 						</svg>
 				</div>
 			</section>
-			<section id="tranding" class="waver"
-				style="background-image: linear-gradient(to top, #e93f53, #f14c75, #f45e96, #f171b4, #eb85cf); background-image: linear-gradient(to top, #f69797, #fb9ba7, #fea0b6, #ffa6c6, #feadd5, #fab5e1, #f6bdeb, #f1c5f4, #eccffa, #e9d9fd, #e8e2fe, #eaeafe);height: 690px;">
-				<div class="t-container" style=" padding-top: 210px;
-				display: flex; justify-content: center;flex-direction: column;align-items: center;padding-top: 210px;">
-					<h1 class="text-center section-heading" style=" margin-top: -110px; color: #61388b; width: 100%; font-family: 'Poppins'; font-weight: 700; ">
+
+			<section>
+				<div class="prodOfYear">
+					<div class="pinkContainer">
+					<div class="prodOfYearText">
+						<h1 class="poy_title" data-aos="fade-right" data-aos-offset="-890"
+						data-aos-easing="ease-out-cubic"
+						data-aos-duration="1500">Microbiome skincare product of the year.</h1>
+						<p class="poy_description" data-aos="fade-left" data-aos-offset="-890"
+						data-aos-easing="ease-out-cubic"
+						data-aos-duration="2500">Our Self-Defense Super-Charged Moisturizer was awarded Microbiome Skincare Product of 2021. 
+													This rich formula is an essential nutrient and antioxidant-packed and helps to renew and 
+													replenish your skins’ microbiome for an instantly radiant, healthy complexion.</p>
+							<button class="poy_button"  data-aos="flip-down" data-aos-offset="-1100"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="1500">SHOP NOW</button>
+					</div>
+					<div class="prodOfYearImg" data-aos="flip-left" data-aos-offset="-600" data-aos-easing="ease-out-back" data-aos-duration="3000">
+						<img style="transform: rotate(328deg);" src="./img/prodOfYear.png" alt="Product of the year image">
+					</div>
+				</div>
+			</div>
+			</section>
+
+
+			<section id="tranding" class="waver" style="margin-bottom: 500px; height: 690px;">
+				<div class="t-container" style=" padding-top: 0px;
+				display: flex; justify-content: center;flex-direction: column;align-items: center;padding-top: 20px;">
+					<h1 class="text-center section-heading" style=" margin-top: -110px; color: #61388b; width: 100%; font-family: 'Poppins'; font-weight: 700; " data-aos="fade-left" data-aos-offset="-990"
+					data-aos-easing="ease-out-cubic"
+					data-aos-duration="2500">
 						Praise for Guardian Complex</h1>
-					<div class="text-center section-subheading" style="font-size: 24px; padding-top: 0px;">
+					<div class="text-center section-subheading" style="font-size: 36px; padding-top: 0px;">
 						<p>Real skin. Real reviews. See the difference. </p>
 						<p>Brighter. Firmer. Smoother. Tighter. </p>
 						<p>Hydrated. Nourished. Confident.</p>
 					</div>
-
 				</div>
-				<div class="t-container">
+				<div class="video_slider"  data-aos="fade-right" data-aos-offset="-890"
+				data-aos-easing="ease-out-cubic"
+				data-aos-duration="1500">
+					<input type="radio" name="slider" id="s1" checked>
+					<input type="radio" name="slider" id="s2">
+					<input type="radio" name="slider" id="s3">
+					<input type="radio" name="slider" id="s4">
+					<input type="radio" name="slider" id="s5">
+				  
+					<label for="s1" id="slide1">
+						<video width="350" controls autoplay>
+							<source src="./img/video_2.mp4" type="video/mp4">
+							This browser doesn't support video tag.
+						</video>
+					</label>
+					<label for="s2" id="slide2">
+						<video width="350" controls >
+							<source src="./img/video_1.mp4" type="video/mp4">
+							This browser doesn't support video tag.
+						</video></label>
+					<label for="s3" id="slide3">
+						<video width="350" controls >
+							<source src="./img/video_3.mp4" type="video/mp4">
+							This browser doesn't support video tag.
+						</video></label>
+					<label for="s4" id="slide4">
+						<video width="350" controls >
+							<source src="./img/video_4.mp4" type="video/mp4">
+							This browser doesn't support video tag.
+						</video></label>
+					<label for="s5" id="slide5">
+						<video width="350" controls >
+							<source src="./img/video_5.mp4" type="video/mp4">
+							This browser doesn't support video tag.
+						</video></label>
+				</div>
+				<button style="margin-top: 180px; color: #fff; box-sizing: border-box; display: flex; flex-direction: row; align-items: center; width: 292px; height: 65px; justify-content: center; padding: 15px 48px 15px 35px; background: #CE0037;
+						border-radius: 10px; font-family: 'Lato'; font-style: normal; font-weight: 800; font-size: 18px; position: relative; left: 37%;">SHOP NOW</button>
+				<!-- <div class="t-container">
 					<div class="swiper tranding-slider"
 						style="transform: scaleY(0.81) scaleX(0.91); margin-top: -120px;">
 						<div class="swiper-wrapper">
-							<!-- Slide-start -->
+							
 							<div class="swiper-slide tranding-slide">
 								<div class="tranding-slide-img">
 									<video width="500" controls autoplay>
@@ -428,8 +495,7 @@
 									</div>
 								</div>
 							</div>
-							<!-- Slide-end -->
-							<!-- Slide-start -->
+					
 							<div class="swiper-slide tranding-slide">
 								<div class="tranding-slide-img">
 									<video width="500" controls>
@@ -453,8 +519,7 @@
 									</div>
 								</div>
 							</div>
-							<!-- Slide-end -->
-							<!-- Slide-start -->
+						
 							<div class="swiper-slide tranding-slide">
 								<div class="tranding-slide-img">
 									<video width="500" controls>
@@ -478,8 +543,7 @@
 									</div>
 								</div>
 							</div>
-							<!-- Slide-end -->
-							<!-- Slide-start -->
+						
 							<div class="swiper-slide tranding-slide">
 								<div class="tranding-slide-img">
 									<video width="500" controls>
@@ -503,8 +567,7 @@
 									</div>
 								</div>
 							</div>
-							<!-- Slide-end -->
-							<!-- Slide-start -->
+						
 							<div class="swiper-slide tranding-slide">
 								<div class="tranding-slide-img">
 									<video width="500" controls>
@@ -542,14 +605,24 @@
 						</div>
 
 					</div>
-				</div>
+				</div> -->
 			</section>
 
 		
 			<!-- BEGIN LOGOS -->
-
+			<section style="height: 621px; left: 0px; top: 0px; background: #FFF9F8; margin-top: 50px; margin-bottom: 50px;">
+				<div class="discoverText" data-aos="fade-right" data-aos-offset="-850" data-aos-duration="2500" data-aos-easing="ease-out-sine">
+					<h1>Rethinking beauty</h1>
+					<p>Clean+ical is where science meets nature to provide you with effective and safe skincare backed by clinical research. 
+						Made for the microbiome, our products are formulated with high-quality, natural ingredients free from harmful chemicals 
+						making them gentle yet powerful to improve skin health and appearance for visible, long-lasting results.</p>
+						<span style="margin-top: 70px; font-family: 'Poppins'; font-size: 24px; color: #1e2230;"><b>Reveal your natural radiance.</b></span>
+					    <button style="margin-top: 30px; color: #fff; box-sizing: border-box; display: flex; flex-direction: row; align-items: center; width: 292px; height: 65px; justify-content: center; padding: 15px 48px 15px 35px; background: #CE0037;
+						border-radius: 10px; font-family: 'Lato'; font-style: normal; font-weight: 800; font-size: 18px;">BROWSE COLLECTION</button>
+				</div>
+			</section>
 		
-			<!-- LOGOS EOF   -->
+<!-- CARD SECTION - - LOGOS EOF   -->
 			<div class="card-grid">
 				<div class="div1">
 					<div class="cardBox">
@@ -813,7 +886,7 @@
 				</div>
 			</div>
 			<!-- BEGIN SHAPE SECTION -->
-			<section>
+			<!-- <section>
 				<div class="shapeContainerOrange">
 					<div class="whiteShapeBlob"></div>
 					<div class="skinGuardianProduct prod-transition"></div>
@@ -825,8 +898,8 @@
 						<button>GET GUARDED</button>
 					</div>
 				</div>
-			</section>
-			<section>
+			</section> -->
+			<!-- <section>
 				<div class="shapeContainerBlue" style="margin-top: -100px;">
 					<div class="whiteShapeBlobBlue"></div>
 					<div class="whiteShapeBlobBlue"></div>
@@ -864,9 +937,9 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- BEGIN DISCOUNT -->
-			<div style="margin-top:  118px; background-size: contain; min-height: 650px;"
+			<!-- <div style="margin-top:  118px; background-size: contain; min-height: 650px;"
 				class="info-blocks__item info-blocks__item-reverse js-img" data-src="./img/before.png">
 				<div class="wrapper">
 					<div class="info-blocks__item-img">
@@ -874,14 +947,14 @@
 							style="left: -20px;">
 
 						<div class="info-blocks__item-img-overlay">
-							<h2>After</h2>
+							<h2>After</h2> -->
 							<!-- <div class="info-blocks__item-img-play"> -->
 							<!-- <img data-src="img/play-btn.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
 									class="js-img" alt=""> -->
 							<!-- </div> -->
-						</div>
-					</div>
-					<div class="center-card">
+						<!-- </div>
+					</div> -->
+					<!-- <div class="center-card">
 						<div class="center-icon">
 							<svg width="68" height="84" viewBox="0 0 68 84" fill="#fff"
 								xmlns="http://www.w3.org/2000/svg">
@@ -903,11 +976,11 @@
 								Resulting skin texture feels 100% smoother and more moisturized
 							</p>
 						</div>
-					</div>
+					</div> -->
 					<!-- <div class="bg-shadow"></div> -->
-					<div class="info-blocks__item-text" style="text-align: right;">
+					<!-- <div class="info-blocks__item-text" style="text-align: right;">
 						<span style="font-family: 'Lato'" class="ba-text">Clinical Results</span>
-						<h2 style="margin-top: -319px; font-family: 'Winston Andrews'; font-size: 36px;">Before</h2>
+						<h2 style="margin-top: -319px; font-family: 'Winston Andrews'; font-size: 36px;">Before</h2> -->
 						<!-- <span class="info-blocks__item-descr">Nourish your skin with toxin-free cosmetic products.
 							With the offers that you can’t refuse.</span>
 						<p>Non aliqua reprehenderit reprehenderit culpa laboris nulla minim anim velit adipisicing
@@ -919,9 +992,9 @@
 
 							<i class="icon-arrow-lg"></i>
 						</a> -->
-					</div>
+					<!-- </div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- <div class="discount js-img" data-src="">
 					<img width="200px"
@@ -939,7 +1012,7 @@
 					</div>
 			</div> -->
 			<!-- DISCOUNT EOF   -->
-			<section>
+			<!-- <section>
 				<div id="example" class="bal-container">
 					<div class="bal-after">
 						<img src="./img/before.png">
@@ -960,10 +1033,10 @@
 						<span class="handle-right-arrow"></span>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- BEGIN ADVANTAGES -->
-			<div class="advantages">
+			<!-- <div class="advantages">
 				<div class="wrapper">
 					<div class="advantages-items">
 						<div class="advantages-item">
@@ -1000,7 +1073,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- ADVANTAGES EOF   -->
 			<!-- BEGIN TOP CATEGORIES -->
 			<!-- <section class="top-categories">
@@ -1210,7 +1283,7 @@
 			</section> -->
 			<!-- NEW ARRIVALS EOF   -->
 			<!-- BEGIN LATEST NEWS -->
-			<section class="latest-news">
+			<!-- <section class="latest-news">
 				<div class="wrapper">
 					<div class="trending-top">
 						<span class="saint-text">Our blog</span>
@@ -1248,10 +1321,11 @@
 						<a href="#" class="btn">Read blog</a>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- LATEST NEWS EOF   -->
 			<!-- BEGIN SUBSCRIBE -->
-			<div class="subscribe">
+		
+			<!-- <div class="subscribe">
 				<div class="wrapper">
 					<div class="subscribe-form">
 						<div class="subscribe-form__img">
@@ -1270,10 +1344,10 @@
 						</form>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- SUBSCRIBE EOF   -->
 			<!-- BEGIN INSTA PHOTOS -->
-			<div class="title-social">
+			<!-- <div class="title-social">
 				<span class="saint-text">Our Social Community</span>
 				</div>
 					<div class="insta-photos">
@@ -1319,7 +1393,7 @@
 						<i class="icon-insta"></i>
 					</div>
 				</a>
-			</div>
+			</div> -->
 		
 			<!-- INSTA PHOTOS EOF   -->
 
@@ -1383,7 +1457,7 @@
 			<div class="wrapper">
 				<div class="footer-top">
 					<div class="footer-top__social">
-						<span>Find us here:</span>
+						<span style="font-size: 16px; font-family:'Lato';">SHIELDED BEAUTY</span>
 						<ul>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -1395,19 +1469,7 @@
 						<img data-src="img/Shielded_logo-white.png" src="./img/Shielded_logo-white.png" class="js-img"
 							alt="">
 					</div>
-					<div class="footer-top__payments">
-						<span>Payment methods:</span>
-						<ul>
-							<li><img data-src="img/payment1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-									class="js-img" alt=""></li>
-							<li><img data-src="img/payment2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-									class="js-img" alt=""></li>
-							<li><img data-src="img/payment3.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-									class="js-img" alt=""></li>
-							<li><img data-src="img/payment4.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-									class="js-img" alt=""></li>
-						</ul>
-					</div>
+					
 				</div>
 				<div class="footer-nav">
 					<div class="footer-nav__col">
@@ -1460,7 +1522,20 @@
 					</div>
 				</div>
 				<div class="footer-copy">
+					<div class="footer-top__payments">
+						<ul>
+							<li><img data-src="img/payment1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+									class="js-img" alt=""></li>
+							<li><img data-src="img/payment2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+									class="js-img" alt=""></li>
+							<li><img data-src="img/payment3.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+									class="js-img" alt=""></li>
+							<li><img data-src="img/payment4.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+									class="js-img" alt=""></li>
+						</ul>
+					
 					<span>&copy; All rights reserved. Shielded 2023</span>
+				</div>
 				</div>
 			</div>
 		</footer>
@@ -1480,12 +1555,16 @@
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/lazyload.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/rating.js"></script>
 	<script src="js/custom.js"></script>
 	<script>
 $(document).ready(function() {
-	AOS.init();
+	AOS.init({
+		animatedClassName: 'aos-animate',
+		useClassNames: true,
+		offset: -150,
+	});
   $('.logo-carousel').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
