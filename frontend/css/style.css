@@ -4500,8 +4500,7 @@ input[type=radio] {
 	width: 280px;
 	justify-content: center;
 	height: 55px;
-	left: -120px;
-	top: 340px;
+	
 	background: #CE0037;
 	border-radius: 10px;
 	color: #FFFFFF;
