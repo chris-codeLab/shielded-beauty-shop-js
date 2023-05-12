@@ -4488,6 +4488,25 @@ input[type=radio] {
 	opacity: 1;
   }
   
+  .primaryRedButton {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 15px 48px 15px 35px;
+	gap: 8px;
+	position: absolute;
+	border: 1px solid #CE0037;
+	width: 280px;
+	justify-content: center;
+	height: 55px;
+	left: -120px;
+	top: 340px;
+	background: #CE0037;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 18px;
+  }
  
  .video_slider label {
   position: absolute;
