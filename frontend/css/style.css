@@ -4900,8 +4900,8 @@ color: #1E2230;
 
 input[type=radio] {
 	position: relative;
-	top: 150%;
-	left: -11%;
+	top: 165%;
+    	left: -7%;
 	width: 18px;
 	height: 18px;
 	margin: 0 15px 0 0;
